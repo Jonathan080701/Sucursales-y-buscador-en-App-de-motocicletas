@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Park - Añadir moto</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Motor Park</h1>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="inventario.html">Inventario</a>
+        </nav>
+    </header>
+    <div class="container_body_inventario">
+        <section class="main">
+            <article>
+                <h3>Crear moto</h3>
+                <div class="form-group">
+                    <label for="sucursal-select">Seleccionar Sucursal:</label>
+                    <select id="sucursal-select" name="sucursal" class="form-control">
+                        <option value="5000">Sucursal 1</option>
+                        <option value="5001">Sucursal 2</option>
+                    </select>
+                </div>
+                <form id="motoForm" class="form-container">
+                    <div class="form-group">
+                        <label for="id_moto">ID Moto:</label>
+                        <input type="number" id="id_moto" name="id_moto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo_moto">Tipo de Moto:</label>
+                        <input type="text" id="tipo_moto" name="tipo_moto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="marca">Marca:</label>
+                        <input type="text" id="marca" name="marca" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modelo">Modelo:</label>
+                        <input type="text" id="modelo" name="modelo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="n_serie">Número de Serie:</label>
+                        <input type="text" id="n_serie" name="n_serie" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cilindraje">Cilindraje:</label>
+                        <input type="number" id="cilindraje" name="cilindraje" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="potencia_hp">Potencia (HP):</label>
+                        <input type="text" id="potencia_hp" name="potencia_hp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="velocidad_maxima">Velocidad Máxima:</label>
+                        <input type="text" id="velocidad_maxima" name="velocidad_maxima" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ano">Año:</label>
+                        <input type="number" id="ano" name="ano" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="peso">Peso:</label>
+                        <input type="number" id="peso" name="peso" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="precio">Precio:</label>
+                        <input type="number" id="precio" name="precio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="foto">Foto:</label>
+                        <input type="file" id="foto" name="foto" accept="image/*" required>
+                    </div>
+                    <button type="submit">Agregar Moto</button>
+                </form>                
+            </article>
+        </section>
+    </div>
+    <script src="static/js/formulario_moto.js"></script>
+</body>
+</html>

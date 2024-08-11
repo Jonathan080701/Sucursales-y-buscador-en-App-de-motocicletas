@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.buscador {
+    width: 100%;
+    margin-top: 5px;
+
+}
+
+.container {
+    padding: 5px;
+}
+
+.titulo{
+    margin-top: 200px; /* Altura del cuerpo */
+    padding: 5px 25px;
+    margin-left: 130px;
+}
+
+.container_body {
+    padding: 20px 40px; /* */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.container_body_inventario {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 115px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.2s ease-in-out;
+    text-align: center; /* Center-align text inside the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px; /* Add margin to create spacing */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.card .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.card button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #555;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group input[type="file"]:focus {
+    border-color: #333;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    z-index: 1000;
+}
+
+.row>* {
+    flex-shrink: 0;
+    /* width: 100%; */
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+    justify-content: center;
+}
+
+.h3, h3 {
+    font-size: calc(1.3rem + .6vw);
+    font-weight: 600;
+}
+
+#search-input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+
+/*================================================= */
+.titulo2{
+    margin-top: 200px; /* Altura del cuerpo */
+    padding: 5px 25px;
+    margin-left: 40px;
+}
+
+.container_ver{
+    margin-top: 200px; /* Altura del cuerpo */
+    margin: 5px;
+    padding: 5px 55px;
+    display: flex;
+}
+
+.container_ver_moto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.img-container {
+    flex: 1;
+    margin-right: 20px; /* Margen entre la imagen y los detalles */
+}
+
+.img-container img {
+    width: 100%;
+    max-width: 500px; /* Tamaño predeterminado de la imagen */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+    margin: 0.5rem; /* Margen alrededor de la imagen */
+}
+
+.details-container {
+    flex: 1;
+    margin-left: 20px; /* Separación entre la imagen y los detalles */
+    color: #333;
+}
+
+.details-container h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.details-container p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.details-container p{
+    font-weight: bold;
+    color: black; /* Títulos en negrita */
+}
+
+.details-container p span{
+    font-weight:400;
+    color: rgb(53, 53, 53); /* Títulos en negrita */
+}
+
+.details-container p.data {
+    color: #777; /* Datos en gris */
+    font-weight: normal;
+}
